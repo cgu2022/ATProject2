@@ -28,7 +28,7 @@ y = irisLabels
 
 accuracy = 0.0
 confusion = np.zeros((3,3))
-k = 8
+k = 10
 model = GaussianNB()
 scores = cross_val_score(model, x, y, cv = k)
 predicted = cross_val_predict(model, x, y, cv = k)
